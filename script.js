@@ -38,9 +38,8 @@ function encontrarCulpable() {
     if (parentezco === "0.00%") {
         document.getElementById("resultado").innerHTML = "Ninguna de las personas registradas es culpable, el parentezco es de: " + parentezco;
     } else if (secuenciaIngresada.length !== 20) {
-    document.getElementById("resultado").innerHTML = "La secuencia ingresada no es correcta. Tiene " + secuenciaIngresada.length + " caracteres.";
-    } 
-    else {
+        document.getElementById("resultado").innerHTML = "La secuencia ingresada no es correcta. Tiene " + secuenciaIngresada.length + " caracteres.";
+    } else {
         console.log(culpable, nombreculpable);
         document.getElementById("resultado").innerHTML = "El culpable es " + nombreculpable + " con un parentezco de " + parentezco;
     }
